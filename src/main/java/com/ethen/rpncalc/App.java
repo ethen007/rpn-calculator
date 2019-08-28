@@ -13,11 +13,10 @@ public class App {
     public static void main(String args[]) {
         RPNCalc calc = new RPNCalc();
         boolean running=true;
-
+        System.out.println("Welcome to RPN Calc!");
         while (running) {
             try {
-                System.out.println("Welcome to RPN Calc!");
-                System.out.println("Please enter number/operator splited with white space");
+                System.out.println("Please enter number/operator splited with white space[exit to stop]:");
                 Scanner scanner = new Scanner(System.in);
                 String rpn = scanner.nextLine();
                 if(EXIT.equalsIgnoreCase(rpn.trim())){
